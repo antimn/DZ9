@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/sergei/RiderProjects/ConsoleApp3/DZ9/DZ9.csproj": {}
+    "/Users/sergei/DZ9/DZ9/DZ9.csproj": {}
   },
   "projects": {
-    "/Users/sergei/RiderProjects/ConsoleApp3/DZ9/DZ9.csproj": {
+    "/Users/sergei/DZ9/DZ9/DZ9.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/sergei/RiderProjects/ConsoleApp3/DZ9/DZ9.csproj",
+        "projectUniqueName": "/Users/sergei/DZ9/DZ9/DZ9.csproj",
         "projectName": "DZ9",
-        "projectPath": "/Users/sergei/RiderProjects/ConsoleApp3/DZ9/DZ9.csproj",
+        "projectPath": "/Users/sergei/DZ9/DZ9/DZ9.csproj",
         "packagesPath": "/Users/sergei/.nuget/packages/",
-        "outputPath": "/Users/sergei/RiderProjects/ConsoleApp3/DZ9/obj/",
+        "outputPath": "/Users/sergei/DZ9/DZ9/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/sergei/.nuget/NuGet/NuGet.Config"

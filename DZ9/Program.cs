@@ -6,7 +6,6 @@ public abstract class Program
     private static int _attackAxe;
     private static int _attackBow;
     private static int _additionalDamage; //Bonus damage
-    
 
 
     public static void Main(string[] args)
@@ -15,21 +14,29 @@ public abstract class Program
         List<Unit> units = new List<Unit>();
         _attackMagic = 10;
         _additionalDamage = 1;
-        units.Add(new Mage { atackVar = "Use MAGIC", atackPower = _attackMagic + _additionalDamage });
+        units.Add(new Mage { attackWar = "Use MAGIC", attackPower = _attackMagic + _additionalDamage });
         _attackAxe = 12;
-        units.Add(new Warrior { atackVar = "Attack with AXE", atackPower = _attackAxe });
+        units.Add(new Warrior { attackWar = "Attack with AXE", attackPower = _attackAxe });
         _attackBow = 15;
-        units.Add(new Hunter { atackVar = "Attack with BOW", atackPower = _attackBow });
+        units.Add(new Hunter { attackWar = "Attack with BOW", attackPower = _attackBow });
 
         foreach (Unit unit in units)
         {
-            Console.WriteLine($"Hero: {unit.atackVar}, Damage {unit.atackPower}");
+            Console.WriteLine($"Hero: {unit.attackWar}, Damage {unit.attackPower}");
             unit.Attack();
-            Console.WriteLine();
         }
 
         Rogue rogue = new Rogue();
         rogue.UseSkills();
-        rogue.Attack();
+
+        //upCast
+        var mage = new Mage();
+        Unit controlledAttack = null;
+        controlledAttack = mage;
+        mage.Attack();
+        controlledAttack.OutFromBattle();
+        
+        
     }
+    
 }
