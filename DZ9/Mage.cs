@@ -6,4 +6,9 @@ public class Mage : Unit
     {
         Console.WriteLine("Mage attacked");
     }
+
+    public void Notice()
+    {
+        Console.WriteLine("Mage find rogue");
+    }
 }

@@ -33,10 +33,10 @@ public abstract class Program
         var mage = new Mage();
         Unit controlledAttack = null;
         controlledAttack = mage;
-        mage.Attack();
+        controlledAttack.attackWar = "Mage saw effect of Vanish and received damage";
+        controlledAttack.attackPower = 20;
+        Console.WriteLine($"Hero: {mage.attackWar}, Damage from ambush spell {mage.attackPower}");
+        mage.Notice();
         controlledAttack.OutFromBattle();
-        
-        
     }
-    
 }
