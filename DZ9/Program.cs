@@ -11,7 +11,7 @@ public abstract class Program
     public static void Main(string[] args)
 
     {
-        List<Unit> units = new List<Unit>();
+        var units = new List<Unit>();
         _attackMagic = 10;
         _additionalDamage = 1;
         units.Add(new Mage { attackWar = "Use MAGIC", attackPower = _attackMagic + _additionalDamage });
@@ -27,7 +27,7 @@ public abstract class Program
         }
 
         Rogue rogue = new Rogue();
-        rogue.UseSkills();
+        Rogue.UseSkills();
 
         //upCast
         var mage = new Mage();
@@ -36,7 +36,7 @@ public abstract class Program
         controlledAttack.attackWar = "Mage saw effect of Vanish and received damage";
         controlledAttack.attackPower = 20;
         Console.WriteLine($"Hero: {mage.attackWar}, Damage from ambush spell {mage.attackPower}");
-        mage.Notice();
+        Mage.Notice();
         controlledAttack.OutFromBattle();
     }
 }
